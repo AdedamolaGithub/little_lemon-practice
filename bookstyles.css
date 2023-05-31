@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700 &display=swap');
+
+body {
+    background-image: url('emptyplate.png');
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("whiteplate.png") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+header {
+    background-color: transparent;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+header a img {
+    max-width: 400px;
+    /* Adjust the value to your desired size */
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+}
+
+nav {
+    transform: skew(0deg);
+
+    margin: 10px 20px 0;
+    background-size: fill;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(15, 14, 14);
+    background-color: rgb(59, 122, 82);
+    align-items: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-right: 10px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #f8f4f4;
+    padding: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 420px 420px;
+}
+
+.foodcard {
+    background: url("foodcard.png") center/cover no-repeat;
+}
+
+.banner h2 {
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+.card-content {
+    background: #fff;
+    height: 330px;
+}
+
+.card-content h3 {
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.form-row {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+form select,
+form input {
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+
+form input[type=text],
+form input[type=number],
+form input::placeholder,
+select {
+    color: #9a9a9a;
+}
+
+form input[type=submit] {
+    color: #fff;
+    background: #f2745f;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}z
+
+form input[type=submit]:hover {
+    opacity: 0.9;
+}
+
+@media(max-width: 992px) {
+    .card-container {
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+
+    .foodcard{
+        height: 330px;
+    }
+}
+
+
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.footer-row h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #dad3d3;
+    
+
+}
+
+.footer-p {
+    margin-bottom: 20px;
+    color: #131212;
+    border-width: 0.1rem;
+    border-bottom: none;
+    border-left: none;  
+    border-right: none;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+.footer-row img {
+    max-width: 50px;
+    height: auto;
+}
+
+/* Adjust the styles below to meet your global standard */
+footer a {
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
